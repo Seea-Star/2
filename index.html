@@ -34,58 +34,58 @@
         box-sizing: border-box;
       }
 
-      /* BOX NOME PROPRIETARIO */
+      /* BOX NOME PROPRIETARIO CON LINK */
       .roomowner {
         background-color: #111111;
-        color: #ffffff;
         width: 100%;
-        border: 2px solid #111111;
         border-radius: 12px;
         box-shadow: 2px 2px 0px #F3EEDA;
-        padding: 5px 10px;
+        padding: 6px 10px;
         box-sizing: border-box;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+
+      .roomowner a {
+        color: #ffffff !important;
+        text-decoration: none;
         font-weight: 800;
         font-size: 13px;
-        text-align: center;
+        display: block;
+        cursor: pointer;
       }
 
       /* TITOLI SEZIONI */
       .infoboxtitle {
         background-color: #F3EEDA;
         color: #111111;
-        border: 2px solid #111111;
+        border: 1.5px solid #111111;
         border-radius: 8px;
         width: fit-content;
         box-sizing: border-box;
-        padding: 1px 8px;
-        margin-bottom: 3px;
-        font-size: 11px;
+        padding: 1px 7px;
+        margin-bottom: 2px;
+        font-size: 10px;
         font-weight: 800;
-        box-shadow: 1px 1px 0px #111111;
       }
 
-      /* CASELLE DI TESTO */
+      /* CASELLE DI TESTO REGOLATE PER LA LEGGIBILITÀ */
       .infoboxspace {
         width: 100%;
-        height: 20px;
+        min-height: 22px;
         background-color: #ffffff;
         color: #111111;
-        border: 2px solid #111111;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        box-shadow: 2px 2px 0px #111111;
+        border: 1.5px solid #111111;
+        border-radius: 8px;
+        margin-bottom: 6px;
         box-sizing: border-box;
-        padding: 4px 8px;
-        overflow: scroll;
-        font-size: 12px;
+        padding: 2px 6px;
+        overflow: hidden;
+        font-size: 11px;
         font-weight: 700;
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
-      }
-
-      .infoboxspace::-webkit-scrollbar {
-        display: none;
+        line-height: 1.3;
+        display: flex;
+        align-items: center;
       }
 
       .itemspace {
@@ -98,17 +98,17 @@
 
       /* CASELLE DEGLI OGGETTI (ITEMS) */
       .itembox {
-        height: 50px;
-        width: 50px;
+        height: 48px;
+        width: 48px;
         background-color: #ffffff;
-        border: 2px solid #111111;
-        border-radius: 10px;
-        box-shadow: 2px 2px 0px #111111;
+        border: 1.5px solid #111111;
+        border-radius: 8px;
+        box-shadow: 1.5px 1.5px 0px #111111;
         display: flex;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
-        padding: 4px;
+        padding: 3px;
       }
 
       .itembox img {
@@ -116,24 +116,25 @@
         height: auto;
       }
 
+      /* CONTENITORE STANZA SENZA BORDI */
       .roombox {
         width: 400px;
         height: 353px;
+        background: transparent;
+        border: none;
+        box-shadow: none;
       }
 
       .roombox img {
         width: 100%;
         height: 100%;
         object-fit: contain;
+        display: block;
+        border: none;
       }
 
       html {
         cursor: url(https://file.garden/ZmFfhSOgiFXI9ZBU/cursors/tomodachi-life-hand.png), auto;
-      }
-    
-      .roomowner a {
-        all: unset;
-        cursor: url(https://file.garden/ZmFfhSOgiFXI9ZBU/cursors/tomodachi-life-point.png), auto;
       }
     </style>
   </head>
@@ -141,28 +142,29 @@
     <div class="mainbox">
       <div style="height: 100%; margin-left: 10px; display: flex; align-items: center; margin-right: 10px;">
         <div class="roombox">
-          <img src="https://cosmic-seea.neocities.org/tuo-file-stanza.png" />
+          <!-- SOSTITUISCI room.png CON IL LINK DELLA TUA STANZA SU NEOCITIES -->
+          <img src="https://cosmic-seea.neocities.org/room.png" alt="Seea's Room" />
         </div>
       </div>
       <div class="infobox">
         <div class="roomowner">
-          <a href="https://cosmic-seea.neocities.org" target="parent">Seea (Seea Star)</a>
+          <a href="https://cosmic-seea.neocities.org/" target="_parent">Seea (Seea Star)</a>
         </div>
         
         <div class="infoboxtitle">
           MOVED ON
         </div>
-        <div class="infoboxspace" style="padding: 4px 5px">
+        <div class="infoboxspace">
           30 Sept 2025
         </div>
 
         <div class="infoboxtitle">
           LIKES
         </div>
-        <div class="infoboxspace" style="margin-bottom: 3px;">
+        <div class="infoboxspace" style="margin-bottom: 2px;">
           Space & Pixel art ✧
         </div>
-        <div class="infoboxspace" style="margin-bottom: 3px;">
+        <div class="infoboxspace" style="margin-bottom: 2px;">
           Cozy web aesthetics
         </div>
         <div class="infoboxspace">
@@ -172,14 +174,14 @@
         <div class="infoboxtitle">
           REASON FOR MOVING IN
         </div>
-        <div class="infoboxspace" style="height: 50px;">
+        <div class="infoboxspace" style="min-height: 42px;">
           To share my cozy universe!
         </div>
 
         <div class="infoboxtitle">
           FAVORITE PART OF LIVING HERE
         </div>
-        <div class="infoboxspace" style="height: 50px;">
+        <div class="infoboxspace" style="min-height: 42px;">
           Meeting cool webmasters.
         </div>
 
