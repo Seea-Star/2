@@ -1,110 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 - LOST IN SPACE | COSMIC-S</title>
-  <link rel="icon" type="image/png" href="https://cosmic-seea.neocities.org/stamp-5.png">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
-  
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSMIC-S - Apartment Room</title>
     
-    body {
-      background-color: #f5f5f7;
-      background-image: 
-        linear-gradient(#e1e1e6 1px, transparent 1px),
-        linear-gradient(90deg, #e1e1e6 1px, transparent 1px);
-      background-size: 20px 20px;
-      color: #111111;
-      font-family: 'Quicksand', sans-serif;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700;800&display=swap" rel="stylesheet">
 
-    .error-card {
-      max-width: 500px;
-      width: 100%;
-      background: #111111;
-      color: #ffffff;
-      border: 3px solid #111111;
-      border-radius: 28px;
-      padding: 30px 24px;
-      box-shadow: 6px 6px 0px #F3EEDA;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-    }
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    .pixel-code {
-      font-family: 'Press Start 2P', monospace;
-      font-size: 2.5rem;
-      color: #F3EEDA;
-      letter-spacing: 2px;
-      text-shadow: 0 0 10px rgba(243, 238, 218, 0.5);
-    }
-
-    .error-title {
-      font-size: 1.2rem;
-      font-weight: 800;
-    }
-
-    .error-msg {
-      font-size: 0.85rem;
-      color: #cccccc;
-      line-height: 1.4;
-    }
-
-    /* Pulsante stile COSMIC-S */
-    .btn-home {
-      background: #F3EEDA;
-      color: #111111;
-      border: 2px solid #111;
-      border-radius: 12px;
-      padding: 12px 20px;
-      font-weight: 800;
-      font-size: 0.85rem;
-      text-decoration: none;
-      box-shadow: 3px 3px 0px #ffffff;
-      transition: transform 0.1s ease;
-      display: inline-block;
-      margin-top: 10px;
-    }
-
-    .btn-home:hover {
-      transform: translate(-2px, -2px);
-      box-shadow: 5px 5px 0px #ffffff;
-    }
-
-    .btn-home:active {
-      transform: translate(1px, 1px);
-      box-shadow: 2px 2px 0px #ffffff;
-    }
-  </style>
-</head>
-<body>
-
-  <div class="error-card">
-    <div class="pixel-code">404</div>
+      body {
+        background-color: #f5f5f7;
+        background-image: 
+          linear-gradient(#e1e1e6 1px, transparent 1px),
+          linear-gradient(90deg, #e1e1e6 1px, transparent 1px);
+        background-size: 20px 20px;
+        color: #111111;
+        font-family: 'Quicksand', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 10px;
+      }
     
-    <!-- Puoi sostituire o aggiungere un'immagine/GIF speciale qui -->
-    <div style="font-size: 2rem;">🚀 💫</div>
+      .mainbox {
+        width: 680px;
+        background: #ffffff;
+        border: 3px solid #111111;
+        border-radius: 24px;
+        padding: 16px;
+        box-shadow: 5px 5px 0px #111111;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+      }
 
-    <div class="error-title">LOST IN SPACE!</div>
-    <p class="error-msg">
-      Ops! La pagina che stavi cercando non esiste o è stata spostata in un'altra galassia.
-    </p>
+      .roombox {
+        width: 400px;
+        height: 353px;
+        border: 2px solid #111111;
+        border-radius: 16px;
+        overflow: hidden;
+        background: #F3EEDA;
+        box-shadow: 3px 3px 0px #111111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    <!-- Usa un link assoluto (completo) per farlo funzionare ovunque -->
-    <a href="https://cosmic-seea.neocities.org/" class="btn-home">
-      ← RETURN TO HOME
-    </a>
-  </div>
+      .roombox img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
 
-</body>
+      .infobox {
+        flex: 1;
+        height: 100%; 
+        display: flex; 
+        flex-direction: column; 
+        gap: 8px;
+        justify-content: center;
+      }
+
+      .roomowner {
+        background: #111111;
+        color: #ffffff;
+        width: 100%;
+        border: 2px solid #111111;
+        border-radius: 12px;
+        padding: 8px 12px;
+        box-sizing: border-box;
+        box-shadow: 2px 2px 0px #F3EEDA;
+        font-weight: 800;
+        font-size: 0.85rem;
+        text-align: center;
+      }
+
+      .roomowner a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .infoboxtitle {
+        background: #F3EEDA;
+        color: #111111;
+        border: 2px solid #111111;
+        border-radius: 8px;
+        width: fit-content;
+        box-sizing: border-box;
+        padding: 2px 8px;
+        font-size: 0.7rem;
+        font-weight: 800;
+        box-shadow: 2px 2px 0px #111111;
+      }
+
+      .infoboxspace {
+        width: 100%;
+        background-color: #ffffff;
+        border: 2px solid #111111;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 6px 8px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        box-shadow: 2px 2px 0px #111111;
+        overflow-y: auto;
+        scrollbar-width: none;
+      }
+
+      .infoboxspace::-webkit-scrollbar {
+        display: none;
+      }
+
+      .itemspace {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+        margin-top: 2px;
+      }
+
+      .itembox {
+        height: 44px;
+        width: 44px;
+        background-color: #ffffff;
+        border: 2px solid #111111;
+        border-radius: 10px;
+        box-shadow: 2px 2px 0px #111111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 4px;
+      }
+
+      .itembox img {
+        width: 100%;
+        height: auto;
+        image-rendering: pixelated;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainbox">
+      
+      <!-- STANZA (Qui andrà l'immagine della tua stanza) -->
+      <div class="roombox">
+        <img src="https://cosmic-seea.neocities.org/tuo-file-stanza.png" alt="Cosmic-S Room" />
+      </div>
+
+      <!-- INFORMAZIONI DELLA STANZA -->
+      <div class="infobox">
+        <div class="roomowner">
+          <a href="https://cosmic-seea.neocities.org" target="_parent">COSMIC-S</a>
+        </div>
+
+        <div class="infoboxtitle">MOVED ON</div>
+        <div class="infoboxspace" style="height: 28px;">30 Sept 2025</div>
+
+        <div class="infoboxtitle">LIKES</div>
+        <div class="infoboxspace" style="height: 28px;">Space, Pixel Art & Cozy vibes ✧</div>
+
+        <div class="infoboxtitle">REASON FOR MOVING IN</div>
+        <div class="infoboxspace" style="height: 40px;">To share a little piece of my universe in the apartment building!</div>
+
+        <div class="infoboxtitle">FAVORITE PART OF LIVING HERE</div>
+        <div class="infoboxspace" style="height: 40px;">Meeting other creative webmasters and trading buttons.</div>
+
+        <div class="infoboxtitle">ITEMS (Optional)</div>
+        <div class="itemspace">
+          <div class="itembox" id="item1"></div>
+          <div class="itembox" id="item2"></div>
+          <div class="itembox" id="item3"></div>
+          <div class="itembox" id="item4"></div>
+        </div>
+      </div>
+
+    </div>
+  </body>
 </html>
